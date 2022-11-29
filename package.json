@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "CPSC 349 - Fall 2022 - Exercise 3",
   "scripts": {
+    "s": "npm-run-all --parallel start tailwind",
     "start": "browser-sync start --server --startPath /posts.html --files '*.html,*.css,*.js'",
-    "test": "standard && vnu --skip-non-html --Werror *.html"
+    "test": "standard && vnu --skip-non-html --Werror *.html",
+    "tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
