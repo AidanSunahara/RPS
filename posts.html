@@ -9,26 +9,29 @@
 </head>
 
 <body>
-    <h1 class="text-center">
-        Rock Paper Scissors Games
+    <h1 class="text-7xl text-center font-bold ">
+        Rock Paper Scissors
     </h1>
-    <div>
-        <h2 class="text-center">
-            Make a choice
-        </h2>
-    </div>
-    <div class="flex flex-row justify-around">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="rock">
-            Rock
-          </button>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="paper">
-            Paper
-          </button>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="scissors">
-            Scissors
-          </button>
+    <h2 class="pt-28 text-4xl text-center font-bold ">
+        Make a choice
+    </h2>
+
+    <div class="flex flex-row justify-around pr-20 pl-20">
+
+        <button id="rock">
+            <img class="scale-75" src="/images/rock.jpg" alt="rock">
+        </button>
+
+        <button id="paper">
+            <img class="scale-75" src="/images/paper.jpg" alt="paper">
+        </button>
+
+        <button id="scissors">
+            <img class ="scale-75" src="/images/scissors.jpg" alt="scissors">
+        </button>
 
     </div>
+
     <div>
         <h2 id = "outcome"></h2>
     </div>
