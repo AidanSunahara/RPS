@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="forest" lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title class = "">Lorem ipsum dolor sit amet</title>
+    <title class = "">Let's Play Rock Paper Scissors!</title>
     <link rel="functions" href="/comments.js">
     <link rel="stylesheet" href="/dist/output.css">
 </head>
@@ -13,33 +13,38 @@
         Rock Paper Scissors
     </h1>
     <h2 class="pt-28 text-4xl text-center font-bold ">
-        Make a choice
+        Make a choice:
     </h2>
 
     <div class="flex flex-row justify-around pr-20 pl-20">
-
+        <div class="rounded-full">
         <button id="rock">
-            <img class="scale-75" src="/images/rock.jpg" alt="rock">
+            <img class="scale-75 shadow rounded-full max-w-full h-auto align-middle border-none" src="/images/rock.jpg" alt="rock">
         </button>
+        </div>
 
+        <div class="rounded-full">
         <button id="paper">
-            <img class="scale-75" src="/images/paper.jpg" alt="paper">
+            <img class="scale-75 shadow rounded-full max-w-full h-auto align-middle border-none" src="/images/paper.jpg" alt="paper">
         </button>
+        </div>
 
+        <div class="rounded-full">
         <button id="scissors">
-            <img class ="scale-75" src="/images/scissors.jpg" alt="scissors">
+            <img class ="scale-75 shadow rounded-full max-w-full h-auto align-middle border-none" src="/images/scissors.jpg" alt="scissors">
         </button>
+        </div>
 
     </div>
 
     <div>
         <h2 id = "outcome"></h2>
     </div>
-    <div id = "score">
+    <div id = "score" class="text-center">
         <h2 id="playerScore">Player Score: 0</h2>
         <h2 id="computerScore">Computer Score: 0</h2>
         <h2 id="tieScore">Tie Score: 0</h2>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="reset">
+        <button class="btn btn-primary" id="reset">
             Reset
           </button>
     </div>
