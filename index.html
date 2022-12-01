@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html data-theme="forest" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title class="">Let's Play Rock Paper Scissors!</title>
+    <link rel="functions" href="/comments.js">
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+
+<body class="pb-16 sm:pb-0">
+    <h1 class="text-3xl text-center font-bold mt-12 md:text-7xl">
+        Rock Paper Scissors
+    </h1>
+    <h2 class="py-12 md:pt-20 text-xl md:text-4xl text-center font-bold ">
+        Make a choice:
+    </h2>
+
+    <div class="flex justify-center pb-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-28 gap-y-12">
+            <button id="rock" class="h-28 w-28 lg:h-48 lg:w-48 bg-white rounded-full p-4">
+                <img src="/images/rock.png" alt="rock">
+            </button>
+
+            <button id="paper" class="h-28 w-28 lg:h-48 lg:w-48 bg-white rounded-full p-4">
+                <img src="/images/paper.png" alt="paper">
+            </button>
+
+            <button id="scissors" class="h-28 w-28 lg:h-48 lg:w-48 bg-white rounded-full p-4">
+                <img src="/images/scissors.png" alt="scissors">
+            </button>
+        </div>
+    </div>
+
+    <div class="flex justify-center pb-6 text-center px-12 sm:px-0">
+        <h2 id="outcome"></h2>
+    </div>
+
+    <div id="score" class="text-center">
+        <h2 id="playerScore">Player Score: 0</h2>
+        <h2 id="computerScore">Computer Score: 0</h2>
+        <h2 id="tieScore">Tie Score: 0</h2>
+        <button class="btn btn-primary mt-6" id="reset">
+            Reset
+        </button>
+    </div>
+
+    <script type="module" src="logic.js"></script>
+
+</body>
+
+</html>
