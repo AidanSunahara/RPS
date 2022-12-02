@@ -8,11 +8,7 @@
     <link rel="functions" href="/comments.js">
     <link rel="stylesheet" href="/dist/output.css">
 </head>
-
-<body id = "background" class="pb-16 sm:pb-0">
-    <h1 class="text-center text-3xl font-bold mt-12 md:text-7xl">
-        Rock Paper Scissors
-    </h1>
+<nav class="flex justify-end">
     <div class="flex flex-row mt-8 mr-8 space-x-6 justify-center">
         <span class="mt-3 text-md font-bold">
             Light
@@ -29,11 +25,12 @@
             Dark
         </span>
     </div>
-    <div id="current_theme" class="text-center">
-        
-    </div>
+</nav>
+<body id = "background" class="pb-16 sm:pb-0">
+    <h1 class="text-center text-3xl font-bold mt-12 md:text-7xl">
+        Rock Paper Scissors
+    </h1>
       
-
 
     <h2 class="py-12 md:pt-20 text-xl md:text-4xl text-center font-bold ">
         Make a choice:
@@ -56,10 +53,10 @@
     </div>
 
     <div class="flex justify-center pb-6 text-center px-12 sm:px-0">
-        <h2 id="outcome"></h2>
+        <h2 class ="text-center text-lg"id="outcome"></h2>
     </div>
 
-    <div id="score" class="text-center">
+    <div id="score" class="text-center text-lg">
         <h2 id="playerScore">Player Score: 0</h2>
         <h2 id="computerScore">Computer Score: 0</h2>
         <h2 id="tieScore">Tie Score: 0</h2>
