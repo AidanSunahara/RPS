@@ -127,9 +127,7 @@ function updateScore(){
 
 function updateScoreHtml(){
   playerScoreHtml.innerHTML = "Player Score: " + playerScore
-
   computerScoreHtml.innerHTML = "Computer Score: " + computerScore
-
   tieScoreHtml.innerHTML = "Tie Score: " + tieScore
 }
 
@@ -160,9 +158,4 @@ resetButton.addEventListener("click", async event => {
     function settings() {
       document.getElementById("background").style.color = "white";
     }
-
-
-
-
-
 })
