@@ -1705,7 +1705,7 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
-#toggle:checked ~ label div.toggle-dot {
+#toggle:checked ~ label span.toggle-dot {
   --tw-translate-x: 2rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -2278,10 +2278,6 @@ html {
   margin: 0.25rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -2292,6 +2288,10 @@ html {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mt-6 {
