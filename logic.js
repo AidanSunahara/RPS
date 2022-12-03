@@ -150,12 +150,4 @@ resetButton.addEventListener("click", async event => {
   console.log("Player: " + playerScoreString)
   console.log("Computer: " + computerScoreString)
   console.log("Tie: " + tieScoreString)
-
-
-  const settingsButton = document.getElementById("settings")
-    settingsButton.addEventListener("click", settings);
-
-    function settings() {
-      document.getElementById("background").style.color = "white";
-    }
 })
