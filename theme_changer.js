@@ -10,21 +10,21 @@ const toggleTheme = function () {
         localStorage.setItem('darkModeStorage', "off")
     }
 }
-toggleTheme();
+
 checkbox.addEventListener("click", toggleTheme)
 
 if (localStorage.getItem('darkModeStorage') === null) {
     console.log("Dark Mode is null")
     localStorage.setItem('darkModeStorage', "off")
-  } 
-  else {
-      const darkModeStorage = localStorage.getItem('darkModeStorage')
-      if (darkModeStorage === "on") {
-          background.setAttribute("data-theme", "forest")
-          checkbox.checked = true
-      }
-      else {
-          background.setAttribute("data-theme", "lofi")
-      }
-      console.log("test")
-  }
+    background.setAttribute("data-theme", "lofi")
+} 
+else {
+    const darkModeStorage = localStorage.getItem('darkModeStorage')
+    if (darkModeStorage === "on") {
+        background.setAttribute("data-theme", "forest")
+        checkbox.checked = true
+    }
+    else {
+        background.setAttribute("data-theme", "lofi")
+    }
+}
