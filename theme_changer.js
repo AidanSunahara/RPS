@@ -10,7 +10,7 @@ const toggleTheme = function () {
         localStorage.setItem('darkModeStorage', "off")
     }
 }
-//toggleTheme();
+toggleTheme();
 checkbox.addEventListener("click", toggleTheme)
 
 if (localStorage.getItem('darkModeStorage') === null) {
