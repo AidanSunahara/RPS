@@ -199,7 +199,6 @@ resetButton.addEventListener("click", async event => {
   outcomeHtml.hidden = true
   outcomeHtml.innerHTML = "Results"
   localStorage.setItem('resultStorage', "")
-  //outcomeHtml.hidden = true
 
   localStorage.setItem('playerScoreStorage', "0")
   localStorage.setItem('computerScoreStorage', "0")
